@@ -3960,13 +3960,15 @@ input, select, textarea {
 			}
 
 		}
-/* Police Inter (Google Fonts) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+/* Import police Inter via Google Fonts (version HTTPS sécurisée) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap");
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   background-color: #f9f7f4;
   color: #000;
+  margin: 0;
+  padding: 0;
 }
 
 /* === Book a Call Section === */
@@ -4066,6 +4068,7 @@ body {
   display: flex;
   gap: 25px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .radios label {
