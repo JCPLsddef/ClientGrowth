@@ -4019,3 +4019,79 @@ input, select, textarea {
 .book-form input[type=submit]:hover {
   opacity: 0.8;
 }
+/* === Book a Call Premium === */
+.book-section {
+  background: #f9f7f4; /* beige clair */
+  color: #000;
+  text-align: left;
+  padding: 80px 20px;
+}
+
+.book-section h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.book-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.book-form .fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.book-form .field {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-form .field.full {
+  grid-column: 1 / -1;
+}
+
+.book-form input,
+.book-form textarea,
+.book-form select {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 16px;
+  background: #fff;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.book-form label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.book-form textarea {
+  resize: vertical;
+}
+
+.book-form input[type=submit] {
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.book-form input[type=submit]:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
