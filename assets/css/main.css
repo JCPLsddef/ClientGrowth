@@ -4477,3 +4477,14 @@ body {
   background: #111;
   transform: translateY(-2px);
 }
+/* Animation fade + slide */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -44,6 +44,15 @@
 
       <!-- Colonne droite -->
       <div class="book-right">
+        <div class="book-text fade-up">
+  <span class="book-badge">Book a call</span>
+  <h1 class="title">LET’S<br>MAKE<br>MONEY</h1>
+  <p class="subtitle">Fill out the form below...</p>
+</div>
+
+<div class="book-form fade-up">
+
+
        <form class="book-form">
   <div class="grid">
     <input type="text" placeholder="Full Name *" required>
@@ -77,10 +86,22 @@
 
   <button type="submit" class="submit-btn">Submit ↗</button>
 </form>
-
+</div>
       </div>
 
     </div>
   </section>
+  <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
 </body>
 </html>
