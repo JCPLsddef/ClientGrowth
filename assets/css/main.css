@@ -4299,3 +4299,42 @@ body {
 .radios label {
   color: #000 !important;
 }
+/* === Boutons radios custom style (Today, Tomorrow, In a few weeks) === */
+.radios {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.radios input[type="radio"] {
+  display: none; /* on cache les radios par défaut */
+}
+
+.radios label {
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #000;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Quand sélectionné → style bouton noir */
+.radios input[type="radio"]:checked + label {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+/* Hover effet */
+.radios label:hover {
+  background: #111;
+  color: #fff;
+}
