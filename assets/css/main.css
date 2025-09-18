@@ -4572,3 +4572,46 @@ input, select, textarea {
   justify-content: center;
   letter-spacing: 0.5px;
 }
+/* Corrige placement et spacing du formulaire */
+.book-form .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px 40px;
+  margin-bottom: 30px;
+}
+
+.book-form input,
+.book-form textarea {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  padding: 10px 0;
+  font-size: 16px;
+  width: 100%;
+}
+
+.book-form textarea {
+  margin: 20px 0;
+  min-height: 90px;
+}
+
+/* Radios bien alignées horizontalement */
+.radios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+}
+
+.radios label {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Submit aligné proprement */
+.submit-btn {
+  margin-top: 30px;
+  padding: 14px 50px;
+  font-size: 16px;
+  font-weight: 500;
+}
