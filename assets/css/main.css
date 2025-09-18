@@ -4615,3 +4615,102 @@ input, select, textarea {
   font-size: 16px;
   font-weight: 500;
 }
+/* Police Inter (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #f9f7f4;
+  color: #000;
+}
+
+/* Inputs style */
+.book-form input,
+.book-form textarea {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  padding: 14px 0; /* plus grand que ton 10px */
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
+
+.book-form input:focus,
+.book-form textarea:focus {
+  border-bottom: 1px solid #000;
+}
+
+/* Placeholders */
+.book-form input::placeholder,
+.book-form textarea::placeholder {
+  color: #777;
+  font-weight: 400;
+}
+
+/* Radios style */
+.radios label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+
+.radios input[type="radio"] {
+  accent-color: #000;
+  width: 18px;
+  height: 18px;
+}
+
+/* Submit button exact style */
+.submit-btn {
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 16px 50px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #111;
+  transform: translateY(-2px);
+}
+/* Header */
+.site-header {
+  background: #f9f7f4;
+  padding: 20px 40px;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav a {
+  margin-left: 30px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+.header-btn {
+  background: #000;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-weight: 500;
+}
