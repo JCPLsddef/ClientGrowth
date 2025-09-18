@@ -4529,3 +4529,46 @@ input, select, textarea {
 .book-section * {
   color: #000 !important;
 }
+/* Forcer couleur noire sur tout le texte du Book Section */
+.book-section h1,
+.book-section p,
+.book-section label,
+.book-section input,
+.book-section textarea,
+.book-section .radios label {
+  color: #000 !important;
+}
+
+/* Placeholder en gris foncé comme ProfResults */
+.book-section input::placeholder,
+.book-section textarea::placeholder {
+  color: #555 !important;
+  opacity: 1; /* corrige Safari */
+}
+
+/* Formulaire : centrage vertical du texte */
+.book-form input,
+.book-form textarea {
+  display: block;
+  line-height: 1.6;
+}
+
+/* Radios ProfResults style */
+.radios {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.radios input[type="radio"] {
+  accent-color: #000; /* rend les boutons radios noirs */
+  transform: scale(1.2); /* un peu plus gros */
+}
+
+/* Submit button centré avec texte bien aligné */
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+}
