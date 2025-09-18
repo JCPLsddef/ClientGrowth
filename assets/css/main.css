@@ -4524,3 +4524,8 @@ input, select, textarea {
     grid-template-columns: 1fr;
   }
 }
+/* Fix couleur texte Book Section */
+.book-section, 
+.book-section * {
+  color: #000 !important;
+}
