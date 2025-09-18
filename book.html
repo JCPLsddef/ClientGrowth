@@ -8,59 +8,51 @@
   </head>
   <body class="is-preload">
     <section id="book" class="book-section">
-      <div class="inner">
-        <div class="book-layout">
-          <!-- Partie gauche : texte -->
-          <div class="book-text">
-            <button class="book-badge">Book a call</button>
-            <h2>Let’s<br>Make<br>Money</h2>
-            <p>Fill out the form below and we will contact you within 48 hours to find out if we can help you.<br>
-            No costs, no obligations, no annoying sales pitch. Guaranteed.</p>
+      <div class="book-container">
+        
+        <!-- Texte gauche -->
+        <div class="book-text">
+          <button class="book-badge">Book a call</button>
+          <h1>Let’s<br>Make<br>Money</h1>
+          <p>Fill out the form below and we will contact you within 48 hours to find out if we can help you.<br>
+          No costs, no obligations, no annoying sales pitch. Guaranteed.</p>
+        </div>
+
+        <!-- Formulaire droite -->
+        <form name="book-a-call" method="POST" data-netlify="true" class="book-form">
+          <input type="hidden" name="form-name" value="book-a-call" />
+
+          <div class="form-grid">
+            <input type="text" name="name" placeholder="Full Name *" required>
+            <input type="email" name="email" placeholder="Business Email *" required>
+            <input type="tel" name="phone" placeholder="+1 * Phone Number *" required>
+            <input type="text" name="company" placeholder="Company Name *" required>
           </div>
 
-          <!-- Partie droite : formulaire -->
-          <form name="book-a-call" method="POST" data-netlify="true" class="book-form">
-            <input type="hidden" name="form-name" value="book-a-call" />
-
-            <div class="fields">
-              <div class="field half">
-                <input type="text" name="name" placeholder="Full Name *" required>
-              </div>
-              <div class="field half">
-                <input type="email" name="email" placeholder="Business Email *" required>
-              </div>
-              <div class="field half">
-                <input type="tel" name="phone" placeholder="+1 * Phone Number *" required>
-              </div>
-              <div class="field half">
-                <input type="text" name="company" placeholder="Company Name *" required>
-              </div>
-              <div class="field full">
-                <label>Can you afford to pay $997 USD for our 30-day paid trial? *</label>
-                <div class="options">
-                  <label><input type="radio" name="budget" value="Yes" required> Yes</label>
-                  <label><input type="radio" name="budget" value="No"> No</label>
-                </div>
-              </div>
-              <div class="field full">
-                <label>What is the current problem you’re experiencing?</label>
-                <textarea name="problem" rows="3"></textarea>
-              </div>
-              <div class="field full">
-                <label>By when do you want to solve this problem? *</label>
-                <div class="options">
-                  <label><input type="radio" name="timeline" value="Today" required> Today</label>
-                  <label><input type="radio" name="timeline" value="Tomorrow"> Tomorrow</label>
-                  <label><input type="radio" name="timeline" value="In a few weeks"> In a few weeks</label>
-                </div>
-              </div>
+          <div class="form-group">
+            <label>Can you afford to pay $997 USD for our 30-day paid trial? *</label>
+            <div class="options">
+              <label><input type="radio" name="budget" value="Yes" required> Yes</label>
+              <label><input type="radio" name="budget" value="No"> No</label>
             </div>
+          </div>
 
-            <div class="actions">
-              <button type="submit" class="cta">Submit →</button>
+          <div class="form-group">
+            <label>What is the current problem you’re experiencing?</label>
+            <textarea name="problem" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>By when do you want to solve this problem? *</label>
+            <div class="options">
+              <label><input type="radio" name="timeline" value="Today" required> Today</label>
+              <label><input type="radio" name="timeline" value="Tomorrow"> Tomorrow</label>
+              <label><input type="radio" name="timeline" value="In a few weeks"> In a few weeks</label>
             </div>
-          </form>
-        </div>
+          </div>
+
+          <button type="submit" class="cta">Submit →</button>
+        </form>
       </div>
     </section>
   </body>
