@@ -3996,4 +3996,26 @@ input, select, textarea {
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
-	}
+	}.book-form input, 
+.book-form textarea, 
+.book-form select {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.book-form input[type=submit] {
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 14px 24px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.book-form input[type=submit]:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Book a Call - ClientGrowth</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+    <section id="book" class="wrapper style1 special">
+      <div class="inner">
+        <header class="major">
+          <h2>Let’s Make Money</h2>
+          <p>Remplissez le formulaire ci-dessous et nous vous contacterons sous 48h.<br />
+          Pas de coûts cachés, pas d’obligations, juste des résultats.</p>
+        </header>
+
+        <!-- Formulaire Netlify -->
+        <form name="book-a-call" method="POST" data-netlify="true" class="book-form">
+          <input type="hidden" name="form-name" value="book-a-call" />
+
+          <div class="fields">
+            <div class="field half">
+              <input type="text" name="name" placeholder="Nom complet *" required />
+            </div>
+            <div class="field half">
+              <input type="email" name="email" placeholder="Email professionnel *" required />
+            </div>
+            <div class="field half">
+              <input type="tel" name="phone" placeholder="Numéro de téléphone *" required />
+            </div>
+            <div class="field half">
+              <input type="text" name="company" placeholder="Nom de l’entreprise" />
+            </div>
+            <div class="field">
+              <label>Quel est votre principal problème actuel ?</label>
+              <textarea name="problem" rows="3"></textarea>
+            </div>
+            <div class="field">
+              <label>Quand souhaitez-vous résoudre ce problème ?</label>
+              <select name="timeline">
+                <option>Aujourd’hui</option>
+                <option>Demain</option>
+                <option>Dans quelques semaines</option>
+              </select>
+            </div>
+          </div>
+
+          <ul class="actions">
+            <li><input type="submit" value="Réserver un appel →" class="primary" /></li>
+          </ul>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
