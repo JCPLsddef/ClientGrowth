@@ -4412,3 +4412,68 @@ body {
   box-shadow: 0 0 0 2px rgba(0,150,136,.15);
   border-bottom-color: #000;
 }
+/* === HEADER STYLE === */
+.site-header {
+  background: #f9f7f4;  /* même couleur de fond */
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo + texte */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espace entre logo et texte */
+}
+
+.logo-img {
+  height: 28px;  /* ajuste selon la taille du logo */
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #111;
+}
+
+/* Bouton "Book a call" */
+.header-btn {
+  background: #000;
+  color: #fff !important;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.header-btn:hover {
+  background: #111;
+  transform: translateY(-2px);
+}
