@@ -1,345 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luxury Marketing Agency</title>
-  <style>
-    /* ===== Global Reset ===== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #ffffff;
-      color: #111111;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-    img { max-width: 100%; display: block; }
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ClientGrowth</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
 
-    /* ===== Color Palette ===== */
-    :root {
-      --black: #0a0a0a;
-      --white: #ffffff;
-      --gray: #f5f5f5;
-      --accent: #a67c52; /* doré chic */
-    }
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-    /* ===== Layout ===== */
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(6px);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      z-index: 1000;
-      border-bottom: 1px solid #eaeaea;
-    }
-    header h1 {
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: var(--black);
-      letter-spacing: 1px;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 30px;
-    }
-    nav a {
-      text-decoration: none;
-      color: var(--black);
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: var(--accent);
-    }
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">ClientGrowth</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Accueil</a></li>
+											<li><a href="#services">Services</a></li>
+											<li><a href="#about">À propos</a></li>
+											<li><a href="#contact">Contact</a></li>
+											<li><a href="#">Se connecter</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
 
-    /* ===== Hero ===== */
-    .hero {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      min-height: 100vh;
-      background: url('https://images.unsplash.com/photo-1507209696998-3c532be9b2b9?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      position: relative;
-      padding: 0 20px;
-    }
-    .hero::after {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(10,10,10,0.6);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      color: var(--white);
-      max-width: 800px;
-    }
-    .hero h2 {
-      font-size: 2.8rem;
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      color: #ddd;
-    }
-    .hero a {
-      display: inline-block;
-      padding: 14px 32px;
-      background: var(--accent);
-      color: var(--white);
-      border-radius: 4px;
-      font-weight: bold;
-      transition: background 0.3s ease, transform 0.3s ease;
-    }
-    .hero a:hover {
-      background: #8c6239;
-      transform: translateY(-3px);
-    }
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>ClientGrowth</h2>
+							<p>Nous aidons les entreprises à croître<br />
+							avec des stratégies digitales puissantes.<br />
+							Construisons votre succès ensemble.</p>
+							<ul class="actions special">
+								<li><a href="#contact" class="button primary">Commencer</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">En savoir plus</a>
+					</section>
 
-    /* ===== Services ===== */
-    .services {
-      padding: 100px 20px;
-      background: var(--gray);
-      text-align: center;
-    }
-    .services h2 {
-      font-size: 2.2rem;
-      margin-bottom: 60px;
-      font-weight: 600;
-    }
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .service {
-      background: var(--white);
-      padding: 40px 30px;
-      border-radius: 8px;
-      transition: box-shadow 0.3s ease, transform 0.3s ease;
-      text-align: left;
-    }
-    .service:hover {
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-      transform: translateY(-5px);
-    }
-    .service h3 {
-      color: var(--accent);
-      margin-bottom: 15px;
-      font-size: 1.3rem;
-    }
-    .service p {
-      color: #444;
-      font-size: 0.95rem;
-    }
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Des solutions adaptées pour votre croissance</h2>
+								<p>Marketing digital, automatisation, branding et plus.<br />
+								Notre objectif : maximiser vos résultats et votre rentabilité.</p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-gem major style1"><span class="label">Qualité</span></span></li>
+								<li><span class="icon fa-heart major style2"><span class="label">Passion</span></span></li>
+								<li><span class="icon solid fa-code major style3"><span class="label">Innovation</span></span></li>
+							</ul>
+						</div>
+					</section>
 
-    /* ===== Testimonials ===== */
-    .testimonials {
-      padding: 100px 20px;
-      background: var(--white);
-      text-align: center;
-    }
-    .testimonials h2 {
-      font-size: 2rem;
-      margin-bottom: 50px;
-    }
-    .testimonial {
-      max-width: 700px;
-      margin: 0 auto 40px;
-      font-style: italic;
-      color: #333;
-      position: relative;
-    }
-    .testimonial::before {
-      content: "“";
-      font-size: 3rem;
-      color: var(--accent);
-      position: absolute;
-      left: -20px;
-      top: -20px;
-    }
-    .testimonial span {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-      color: var(--black);
-    }
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+								<h2>Stratégies marketing<br /> personnalisées</h2>
+								<p>Chaque entreprise est unique. Nous créons des plans sur-mesure pour attirer plus de clients.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2>Automatisation & outils modernes</h2>
+								<p>Gagnez du temps et augmentez votre efficacité grâce à des solutions digitales intelligentes.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+								<h2>Accompagnement & support</h2>
+								<p>Nous restons à vos côtés pour optimiser vos résultats et assurer votre croissance continue.</p>
+							</div>
+						</section>
+					</section>
 
-    /* ===== Contact ===== */
-    .contact {
-      padding: 100px 20px;
-      background: var(--gray);
-      text-align: center;
-    }
-    .contact h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    .contact p {
-      margin-bottom: 40px;
-      color: #444;
-    }
-    form {
-      max-width: 600px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    input, textarea {
-      padding: 14px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-family: inherit;
-      font-size: 1rem;
-      outline: none;
-      transition: border 0.3s ease;
-    }
-    input:focus, textarea:focus {
-      border-color: var(--accent);
-    }
-    button {
-      padding: 14px;
-      background: var(--accent);
-      color: var(--white);
-      border: none;
-      border-radius: 4px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s ease, transform 0.3s ease;
-    }
-    button:hover {
-      background: #8c6239;
-      transform: translateY(-2px);
-    }
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Prêt à booster votre business ?</h2>
+								<p>Discutons ensemble de vos objectifs et voyons comment les atteindre rapidement.</p>
+							</header>
+							<ul class="actions stacked">
+								<li><a href="#contact" class="button fit primary">Prendre rendez-vous</a></li>
+								<li><a href="#services" class="button fit">Voir nos services</a></li>
+							</ul>
+						</div>
+					</section>
 
-    /* ===== Footer ===== */
-    footer {
-      background: var(--black);
-      color: var(--white);
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9rem;
-    }
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; ClientGrowth</li><li>Design adapté de <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
 
-    /* ===== Responsive ===== */
-    @media (max-width: 768px) {
-      header { padding: 15px 20px; }
-      nav ul { gap: 15px; }
-      .hero h2 { font-size: 2rem; }
-      .services h2, .testimonials h2, .contact h2 { font-size: 1.6rem; }
-    }
-  </style>
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <h1>ClientGrowth</h1>
-    <nav>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#testimonials">Clients</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+			</div>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>We Elevate Your Brand</h2>
-      <p>Luxury marketing solutions designed to grow your business and attract premium clients.</p>
-      <a href="#contact">Work With Us</a>
-    </div>
-  </section>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-  <!-- Services -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-grid">
-      <div class="service">
-        <h3>Website Design</h3>
-        <p>High-end websites that blend aesthetics and performance for maximum impact.</p>
-      </div>
-      <div class="service">
-        <h3>Brand Strategy</h3>
-        <p>Crafting clear, powerful brand identities that resonate with premium audiences.</p>
-      </div>
-      <div class="service">
-        <h3>Outreach Campaigns</h3>
-        <p>Automated and personalized outreach to consistently bring in qualified leads.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials" class="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial">
-      "Working with ClientGrowth transformed our online presence. We now attract the right clients effortlessly."
-      <span>- John D., CEO</span>
-    </div>
-    <div class="testimonial">
-      "Their approach is premium, strategic, and results-driven. The experience was seamless."
-      <span>- Sarah K., Entrepreneur</span>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2>Let’s Talk</h2>
-    <p>Leave your information and our team will get back to you shortly.</p>
-    <form id="contactForm">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 ClientGrowth. All rights reserved.</p>
-  </footer>
-
-  <!-- JS -->
-  <script>
-    // Smooth scroll for nav links
-    document.querySelectorAll('nav a, .hero a').forEach(link => {
-      link.addEventListener('click', function(e) {
-        if(this.hash !== "") {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-
-    // Simple form handler (demo only)
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you! Your message has been sent.');
-      this.reset();
-    });
-  </script>
-</body>
+	</body>
 </html>
