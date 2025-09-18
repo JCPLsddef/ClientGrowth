@@ -4115,3 +4115,122 @@ input, select, textarea {
     grid-template-columns: 1fr;
   }
 }
+/* === Book a Call Final Fix === */
+
+/* Police + base */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  background: #f9f7f4;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Container aligné comme ProfResults */
+.book-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
+  padding: 60px 20px;
+  align-items: flex-start;
+}
+
+/* Left text */
+.book-text h1 {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+.book-text p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+/* Formulaire */
+.book-form input,
+.book-form textarea {
+  border: none;
+  border-bottom: 1.5px solid #ccc;
+  padding: 14px 0;
+  font-size: 16px;
+  background: transparent;
+  width: 100%;
+  margin-bottom: 30px;
+  transition: border-color 0.2s ease;
+}
+.book-form input:focus,
+.book-form textarea:focus {
+  border-bottom: 2px solid #000;
+  outline: none;
+}
+.book-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Labels */
+.book-form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #000;
+}
+
+/* Radios style */
+.options, .radios {
+  display: flex;
+  gap: 25px;
+  margin: 15px 0;
+}
+.radios input[type="radio"] {
+  accent-color: #000;
+  width: 18px;
+  height: 18px;
+}
+
+/* Submit */
+.submit-btn, .cta {
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 18px 40px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit-btn:hover, .cta:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+/* Header fix */
+.site-header {
+  background: transparent;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header .nav a {
+  margin-left: 30px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+}
+.site-header .header-btn {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+}
