@@ -1,59 +1,62 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Book a Call - ClientGrowth</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
-  <body class="is-preload">
-    <section id="book" class="book-section">
-      <div class="book-container">
-        
-        <!-- Texte gauche -->
-        <div class="book-text">
-          <button class="book-badge">Book a call</button>
-          <h1>Let’s<br>Make<br>Money</h1>
-          <p>Fill out the form below and we will contact you within 48 hours to find out if we can help you.<br>
-          No costs, no obligations, no annoying sales pitch. Guaranteed.</p>
-        </div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Call - ClientGrowth</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <section class="book-section">
+    <div class="book-container">
+      
+      <!-- Colonne gauche -->
+      <div class="book-left">
+        <span class="badge">Book a call</span>
+        <h1 class="title">
+          Let’s <br> Make <br> Money
+        </h1>
+        <p class="subtitle">
+          Fill out the form below and we will contact you within 48 hours 
+          to find out if we can help you.<br>
+          No costs, no obligations, no annoying sales pitch. Guaranteed.
+        </p>
+      </div>
 
-        <!-- Formulaire droite -->
-        <form name="book-a-call" method="POST" data-netlify="true" class="book-form">
-          <input type="hidden" name="form-name" value="book-a-call" />
-
-          <div class="form-grid">
-            <input type="text" name="name" placeholder="Full Name *" required>
-            <input type="email" name="email" placeholder="Business Email *" required>
-            <input type="tel" name="phone" placeholder="+1 * Phone Number *" required>
-            <input type="text" name="company" placeholder="Company Name *" required>
+      <!-- Colonne droite -->
+      <div class="book-right">
+        <form class="book-form">
+          <div class="grid">
+            <input type="text" placeholder="Full Name *" required>
+            <input type="email" placeholder="Business Email *" required>
+            <input type="tel" placeholder="+1* Phone Number *" required>
+            <input type="text" placeholder="Company Name *" required>
           </div>
 
           <div class="form-group">
             <label>Can you afford to pay $997 USD for our 30-day paid trial? *</label>
-            <div class="options">
-              <label><input type="radio" name="budget" value="Yes" required> Yes</label>
-              <label><input type="radio" name="budget" value="No"> No</label>
+            <div class="radios">
+              <label><input type="radio" name="afford" required> Yes</label>
+              <label><input type="radio" name="afford"> No</label>
             </div>
           </div>
 
-          <div class="form-group">
-            <label>What is the current problem you’re experiencing?</label>
-            <textarea name="problem" rows="3"></textarea>
-          </div>
+          <textarea placeholder="What is the current problem you’re experiencing?"></textarea>
 
           <div class="form-group">
             <label>By when do you want to solve this problem? *</label>
-            <div class="options">
-              <label><input type="radio" name="timeline" value="Today" required> Today</label>
-              <label><input type="radio" name="timeline" value="Tomorrow"> Tomorrow</label>
-              <label><input type="radio" name="timeline" value="In a few weeks"> In a few weeks</label>
+            <div class="radios">
+              <label><input type="radio" name="timeline" required> Today</label>
+              <label><input type="radio" name="timeline"> Tomorrow</label>
+              <label><input type="radio" name="timeline"> In a few weeks</label>
             </div>
           </div>
 
-          <button type="submit" class="cta">Submit →</button>
+          <button type="submit" class="submit-btn">Submit ↗</button>
         </form>
       </div>
-    </section>
-  </body>
+
+    </div>
+  </section>
+</body>
 </html>

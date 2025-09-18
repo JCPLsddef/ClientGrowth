@@ -4393,3 +4393,134 @@ input, select, textarea {
   background: #333;
   transform: translateY(-2px);
 }
+/* BOOK A CALL SECTION */
+.book-section {
+  background-color: #f9f7f4;
+  padding: 100px 20px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.book-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.book-left {
+  flex: 1;
+}
+
+.badge {
+  background: #eee7df;
+  color: #000;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0 0 20px 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #444;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.book-right {
+  flex: 1;
+}
+
+.book-form .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+  margin-bottom: 30px;
+}
+
+.book-form input,
+.book-form textarea {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  padding: 10px 0;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.book-form input:focus,
+.book-form textarea:focus {
+  border-bottom: 1px solid #000;
+}
+
+.book-form textarea {
+  resize: none;
+  margin: 20px 0;
+  min-height: 80px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  font-size: 15px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.radios {
+  display: flex;
+  gap: 20px;
+}
+
+.radios label {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #111;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .book-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .book-form .grid {
+    grid-template-columns: 1fr;
+  }
+}
