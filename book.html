@@ -113,6 +113,23 @@
     });
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll("button, input[type='submit']");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", function() {
+        // Vérifie si c’est déjà désactivé
+        if (btn.disabled) return;
+
+        // Lock le bouton
+        btn.disabled = true;
+        btn.innerText = "Processing..."; 
+        btn.style.opacity = "0.6";
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
