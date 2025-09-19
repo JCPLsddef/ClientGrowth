@@ -4488,3 +4488,61 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+/* Style des champs input + textarea */
+form input,
+form textarea {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px 0;
+  background: transparent;
+  font-size: 16px;
+  color: #000;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+
+/* Boutons radio et options */
+.form-options label {
+  display: inline-block;
+  margin-right: 10px;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-options label:hover {
+  background: #333;
+}
+
+/* Bouton Submit */
+.submit-btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #333;
+}
+button[disabled] {
+  cursor: not-allowed;
+  pointer-events: none;
+}

@@ -100,6 +100,19 @@
 
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+    const submitBtn = form.querySelector("button[type='submit']");
+
+    form.addEventListener("submit", function(e) {
+      // lock le bouton
+      submitBtn.disabled = true;
+      submitBtn.innerText = "Processing..."; // change le texte
+      submitBtn.style.opacity = "0.6"; // effet visuel "désactivé"
+    });
+  });
+</script>
 
 </body>
 </html>
